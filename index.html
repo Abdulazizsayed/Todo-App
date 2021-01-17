@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Todo app</title>
+
+	<!-- Icons -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- Styles -->
+	<link rel="stylesheet" type="text/css" href="css/custom.css">
+</head>
+<body>
+	<div class="container">
+		<!-- Task input -->
+		<div class=" input">
+			<label class="task-input-label" for="task-input">Add new task</label>
+			<input id="task-input" type="text">
+			<button class="add-button">Add</button>
+		</div>
+		<!-- Tasks list title -->
+		<div class="tasks-title">
+			<h3 class="title">Tasks</h3>
+			<button class="clear">Clear</button>
+			<div class="clearfix"></div>
+		</div>
+		<div class="tasks">
+			<h2 class="is-completed">Completed</h2>
+			<ul class="tasks-list completed"></ul>
+			<h2 class="is-completed">Not completed</h2>
+			<ul class="tasks-list not-completed">
+				<h4 class="no-tasks">No tasks yet</h4>
+			</ul>
+		</div>
+	</div>
+	<script src="js/custom.js"></script>
+</body>
+</html>

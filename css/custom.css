@@ -1,0 +1,131 @@
+/*Main rules*/
+body {
+	padding: 0;
+	margin: 0;
+	background-color: #070747;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.container {
+	width: 35%;
+	margin: auto;
+	margin-top: 10%;
+}
+
+.clearfix {
+	clear: both;
+}
+/*End main rules*/
+
+/* Start input div */
+.input {
+	padding: 15px 20px;
+	background-color: #15155c;
+	border-radius: 15px;
+	box-shadow: 5px 10px 18px #212135;
+	color: #DDD
+}
+
+.input .task-input-label {
+	font-size: 20px;
+	margin-right: 15px;
+}
+
+.input #task-input {
+	padding: 10px 15px;
+	font-size: 15px;
+	border: 0;
+	border-radius: 12px;
+}
+
+.input .add-button {
+	padding: 10px 50px;
+	font-size: 15px;
+	border: 0;
+	border-radius: 12px;
+	margin-left: 15px;
+	cursor: pointer;
+	box-sizing: border-box;
+	background-color: #010147;
+	color: #FFF
+}
+
+.input .add-button:hover, .tasks-title .clear:hover, .tasks .task .delete:hover{
+	background-color: #000081;
+}
+/* End input div */
+/* Start tasks title */
+.tasks-title {
+	margin-top: 20px;
+	border-bottom:3px solid blue; 
+	padding: 8px 0;
+}
+
+.tasks-title .title {
+	color: #FFF;
+	font-weight: bold;
+	display: inline;
+}
+
+.tasks-title .clear, .tasks .task .delete {
+	padding: 3px 30px;
+	font-size: 15px;
+	border: 0;
+	border-radius: 12px;
+	margin-left: 15px;
+	cursor: pointer;
+	box-sizing: border-box;
+	background-color: #15155c;
+	color: #FFF;
+	float: right;
+}
+/* End tasks title */
+/* Start tasks */
+.tasks {
+	margin-top: 20px;
+}
+
+.tasks .is-completed {
+	color: #FFF;
+	text-align: center;
+}
+
+.tasks .no-tasks{
+	color: #D37587;
+}
+
+.tasks .task {
+	padding: 5px 0;
+	color: #FFF;
+	font-size: 20px;
+	border-radius: 15px;
+	margin-top: 10px;
+	padding-left: 10px;
+}
+
+.tasks .tasks-list.not-completed .task {
+	background-color: #D37587;
+}
+
+.tasks .tasks-list.completed .task{
+	background-color: #00FF63;
+}
+
+.tasks .task i {
+	cursor: pointer;
+	height: 18px;
+	margin-right: 10px;
+}
+
+.tasks .task .delete {
+	padding: 5px 10px;
+	border-radius: 3;
+	margin-right: 5px;
+}
+/* End tasks */
